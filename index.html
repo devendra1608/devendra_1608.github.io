@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rating Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Rating Converter</h1>
+        <div class="converter">
+            <div class="input-group">
+                <button onclick="showCCInput()">Convert to Codeforces</button>
+                <input type="number" id="cc-rating" placeholder="Enter CodeChef Rating" oninput="convertToCF()" style="display: none;">
+            </div>
+            <div class="input-group">
+                <button onclick="showCFInput()">Convert to CodeChef</button>
+                <input type="number" id="cf-rating" placeholder="Enter Codeforces Rating" oninput="convertToCC()" style="display: none;">
+            </div>
+            <div id="out"></div>
+            <div id="result"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
